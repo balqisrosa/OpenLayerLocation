@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="https://cdn.skypack.dev/ol/ol.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Interactive Map</h1>
+    <!-- <p>Control the map layer visibility with the buttons below</p> -->
+  </header>
+  <main>
+    <div id="map"></div>
+    <div class="controls">
+      <button id="set-source" class="btn">Show Layer</button>
+      <button id="unset-source" class="btn btn-danger">Hide Layer</button>
+      <button id="back-to-location" class="btn btn-success">Back to My Location</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Map Application. Powered by OpenLayers</p>
+  </footer>
+  
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
