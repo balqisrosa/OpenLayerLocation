@@ -63,7 +63,6 @@ function addMarker(coordinates, text) {
   markerSource.addFeature(marker);
 
   popup.innerHTML = `
-    <button class="close-btn">&times;</button>
     <h3>Lokasi</h3>
     <p><strong>Alamat:</strong> ${text}</p>
     <p><strong>Koordinat:</strong> ${toLonLat(coordinates)
@@ -72,9 +71,9 @@ function addMarker(coordinates, text) {
   `;
   overlay.setPosition(coordinates);
 
-  document.querySelector(".close-btn").addEventListener("click", () => {
-    overlay.setPosition(undefined);
-  });
+  // document.querySelector(".close-btn").addEventListener("click", () => {
+  //   overlay.setPosition(undefined);
+  // });
 }
 
 // Ambil lokasi pengguna
